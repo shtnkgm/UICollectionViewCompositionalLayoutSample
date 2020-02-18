@@ -25,18 +25,20 @@ class ViewController: UIViewController {
                 heightDimension: .fractionalHeight(1)
             )
         )
-        let group = NSCollectionLayoutGroup.vertical(
+        let group = NSCollectionLayoutGroup.horizontal(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalHeight(1)
+                heightDimension: .fractionalWidth(1 / 3)
             ),
             subitem: subitem,
             count: 3
         )
         group.interItemSpacing = .fixed(1)
+        let spacing = NSCollectionLayoutSpacing.fixed(1)
+        group.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: spacing, top: spacing, trailing: spacing, bottom: nil)
         
         let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 32
+        section.interGroupSpacing = 1
         
         let compositionalLayout = UICollectionViewCompositionalLayout(section: section)
         collectionView.collectionViewLayout = compositionalLayout
