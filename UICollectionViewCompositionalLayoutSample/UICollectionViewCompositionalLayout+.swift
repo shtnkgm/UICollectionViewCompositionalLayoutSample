@@ -10,15 +10,15 @@ import UIKit
 
 extension UICollectionViewCompositionalLayout {
     static func list(height: CGFloat) -> UICollectionViewCompositionalLayout {
-        return UICollectionViewCompositionalLayout(section: .list(height: height))
+        return .init(section: .list(height: height))
     }
     
     static func grid(column: Int) -> UICollectionViewCompositionalLayout {
-        return UICollectionViewCompositionalLayout(section: .grid(column: column))
+        return .init(section: .grid(column: column))
     }
     
     static func mixed(glidColumn: Int, listHeight: CGFloat) -> UICollectionViewCompositionalLayout {
-        return UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
+        return .init { sectionIndex, layoutEnvironment in
             if sectionIndex % 3 == 0 {
                 return .grid(column: glidColumn)
             } else if sectionIndex % 3 == 1 {
