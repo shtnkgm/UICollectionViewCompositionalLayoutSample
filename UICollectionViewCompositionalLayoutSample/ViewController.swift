@@ -18,30 +18,7 @@ class ViewController: UIViewController {
     }
     
     private func setCollectionView() {
-        
-        let subitem = NSCollectionLayoutItem(
-            layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1 / 3),
-                heightDimension: .fractionalHeight(1)
-            )
-        )
-        let group = NSCollectionLayoutGroup.horizontal(
-            layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalWidth(1 / 3)
-            ),
-            subitem: subitem,
-            count: 3
-        )
-        group.interItemSpacing = .fixed(1)
-        let spacing = NSCollectionLayoutSpacing.fixed(1)
-        group.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: spacing, top: spacing, trailing: spacing, bottom: nil)
-        
-        let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 1
-        
-        let compositionalLayout = UICollectionViewCompositionalLayout(section: section)
-        collectionView.collectionViewLayout = compositionalLayout
+        collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.grid(column: 4)
         
         let nib = UINib(nibName: "CustomCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "CustomCell")
