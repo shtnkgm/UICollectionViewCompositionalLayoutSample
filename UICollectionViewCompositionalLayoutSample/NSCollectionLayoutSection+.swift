@@ -37,7 +37,7 @@ extension NSCollectionLayoutSection {
         let subitem = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalHeight(1)
+                heightDimension: .estimated(44)
             )
         )
         let group = NSCollectionLayoutGroup.horizontal(
