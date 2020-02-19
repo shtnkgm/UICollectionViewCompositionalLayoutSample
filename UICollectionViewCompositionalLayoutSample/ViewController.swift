@@ -36,7 +36,9 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return (collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell.identifier, for: indexPath) as! CustomCell).set(text: "\(indexPath.section)-\(indexPath.row)")
+        let text = indexPath.section != 3 ? "\(indexPath.section)-\(indexPath.row)" : "あのイーハトーヴォの透き通った風、夏でも底に冷たさを持つ青い空、美しい森で飾られたモリーオ市、郊外のぎらぎら光る草の波。"
+        
+        return (collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell.identifier, for: indexPath) as! CustomCell).set(text: text)
     }
 }
 
