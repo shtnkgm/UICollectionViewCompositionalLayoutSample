@@ -9,6 +9,30 @@
 import UIKit
 
 extension UICollectionViewCompositionalLayout {
+    static func list(height: CGFloat) -> UICollectionViewCompositionalLayout {
+        let subitem = NSCollectionLayoutItem(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalHeight(1)
+            )
+        )
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .absolute(height)
+            ),
+            subitem: subitem,
+            count: 1
+        )
+        group.interItemSpacing = .fixed(1)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 1
+        section.contentInsets = .init(top: 1, leading: 1, bottom: 0, trailing: 1)
+        
+        return UICollectionViewCompositionalLayout(section: section)
+    }
+    
     static func grid(column: Int) -> UICollectionViewCompositionalLayout {
         let subitem = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(
