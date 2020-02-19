@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     private func setCollectionView() {
         collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.grid(column: 4)
         
-        let nib = UINib(nibName: "CustomCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "CustomCell")
+        let nib = UINib(nibName: CustomCell.identifier, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: CustomCell.identifier)
         collectionView.dataSource = self
     }
 }
@@ -36,7 +36,7 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return (collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell).set(text: "\(indexPath.section)-\(indexPath.row)")
+        return (collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell.identifier, for: indexPath) as! CustomCell).set(text: "\(indexPath.section)-\(indexPath.row)")
     }
 }
 

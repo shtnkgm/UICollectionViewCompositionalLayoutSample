@@ -9,7 +9,8 @@
 import UIKit
 
 class CustomCell: UICollectionViewCell {
-
+    static let identifier = "CustomCell"
+    
     @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
