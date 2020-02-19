@@ -56,4 +56,29 @@ extension NSCollectionLayoutSection {
         
         return section
     }
+    
+    static func horizontalScroll(column: Int, margin: CGFloat) -> NSCollectionLayoutSection {
+        let subitem = NSCollectionLayoutItem(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1 / CGFloat(column)),
+                heightDimension: .fractionalHeight(1)
+            )
+        )
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalWidth(1 / CGFloat(column))
+            ),
+            subitem: subitem,
+            count: column
+        )
+        group.interItemSpacing = .fixed(margin)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = margin
+        section.contentInsets = .init(top: margin, leading: margin, bottom: margin, trailing: margin)
+        section.orthogonalScrollingBehavior = .continuous
+        
+        return section
+    }
 }

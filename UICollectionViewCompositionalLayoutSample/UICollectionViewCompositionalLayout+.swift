@@ -19,10 +19,12 @@ extension UICollectionViewCompositionalLayout {
     
     static func mixed(glidColumn: Int, listHeight: CGFloat) -> UICollectionViewCompositionalLayout {
         return UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
-            if sectionIndex % 2 == 0 {
+            if sectionIndex % 3 == 0 {
                 return .grid(column: glidColumn)
-            } else {
+            } else if sectionIndex % 3 == 1 {
                 return .list(height: listHeight)
+            } else {
+                return .horizontalScroll(column: glidColumn, margin: 20)
             }
         }
     }
