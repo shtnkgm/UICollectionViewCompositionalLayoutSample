@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     }
     
     private func setCollectionView() {
-        collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.list(height: 60)
-        // collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.grid(column: 4)
+        collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.mixed(glidColumn: 4, listHeight: 60)
         
         let nib = UINib(nibName: CustomCell.identifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: CustomCell.identifier)

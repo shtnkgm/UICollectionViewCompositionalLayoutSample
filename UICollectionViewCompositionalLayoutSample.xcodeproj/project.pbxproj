@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA31FF0623FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31FF0523FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift */; };
+		DA31FF0823FD5F190088C9BC /* NSCollectionLayoutSection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31FF0723FD5F190088C9BC /* NSCollectionLayoutSection+.swift */; };
 		DAABD7AC23FBF19700FC0CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABD7AB23FBF19700FC0CBB /* AppDelegate.swift */; };
 		DAABD7AE23FBF19700FC0CBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABD7AD23FBF19700FC0CBB /* SceneDelegate.swift */; };
 		DAABD7B023FBF19700FC0CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABD7AF23FBF19700FC0CBB /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		DA31FF0523FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCompositionalLayout+.swift"; sourceTree = "<group>"; };
+		DA31FF0723FD5F190088C9BC /* NSCollectionLayoutSection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+.swift"; sourceTree = "<group>"; };
 		DAABD7A823FBF19700FC0CBB /* UICollectionViewCompositionalLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAABD7AB23FBF19700FC0CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAABD7AD23FBF19700FC0CBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				DAABD7AD23FBF19700FC0CBB /* SceneDelegate.swift */,
 				DAABD7AF23FBF19700FC0CBB /* ViewController.swift */,
 				DA31FF0523FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift */,
+				DA31FF0723FD5F190088C9BC /* NSCollectionLayoutSection+.swift */,
 				DAABD7C023FBF91300FC0CBB /* CustomCell.swift */,
 				DAABD7C123FBF91300FC0CBB /* CustomCell.xib */,
 				DAABD7B123FBF19700FC0CBB /* Main.storyboard */,
@@ -150,6 +153,7 @@
 			files = (
 				DAABD7B023FBF19700FC0CBB /* ViewController.swift in Sources */,
 				DA31FF0623FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift in Sources */,
+				DA31FF0823FD5F190088C9BC /* NSCollectionLayoutSection+.swift in Sources */,
 				DAABD7AC23FBF19700FC0CBB /* AppDelegate.swift in Sources */,
 				DAABD7C223FBF91300FC0CBB /* CustomCell.swift in Sources */,
 				DAABD7AE23FBF19700FC0CBB /* SceneDelegate.swift in Sources */,
