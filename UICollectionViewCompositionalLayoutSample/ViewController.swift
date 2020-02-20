@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         snapshot.appendItems(listItems, toSection: .list)
         snapshot.appendItems(gridItems, toSection: .grid)
         snapshot.appendItems(horizontalScrollItems, toSection: .horizontalScroll)
-        snapshot.appendItems(autoSizingListItems, toSection: .autoSizingList)
+        // snapshot.appendItems(autoSizingListItems, toSection: .autoSizingList)
         dataSource.apply(snapshot, animatingDifferences: true)
     }
 }

@@ -9,6 +9,6 @@
 import Foundation
 
 struct Item: Hashable {
-    let identifier = UUID()
+    // let identifier = UUID()
     let title: String
 }
