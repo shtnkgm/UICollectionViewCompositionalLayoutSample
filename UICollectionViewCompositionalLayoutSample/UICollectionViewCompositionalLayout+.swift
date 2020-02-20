@@ -17,6 +17,14 @@ extension UICollectionViewCompositionalLayout {
         return .init(section: .grid(column: column))
     }
     
+    static func autoSizingList() -> UICollectionViewCompositionalLayout {
+        return .init(section: .autoSizingList())
+    }
+    
+    static func horizontalScroll(column: Int, margin: CGFloat) -> UICollectionViewCompositionalLayout {
+        return .init(section: .horizontalScroll(column: column, margin: 20))
+    }
+    
     static func mixed(glidColumn: Int, listHeight: CGFloat) -> UICollectionViewCompositionalLayout {
         return .init { sectionIndex, layoutEnvironment in
             if sectionIndex % 4 == 0 {

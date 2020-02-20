@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     private func setCollectionView() {
         collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.list(height: 60)
+        // collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.autoSizingList()
+        // collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.horizontalScroll(column: 5, margin: 20)
         // collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.grid(column: 4)
         // collectionView.collectionViewLayout = UICollectionViewCompositionalLayout.mixed(glidColumn: 4, listHeight: 60)
         
