@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA31FF0623FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31FF0523FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift */; };
 		DA31FF0823FD5F190088C9BC /* NSCollectionLayoutSection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31FF0723FD5F190088C9BC /* NSCollectionLayoutSection+.swift */; };
+		DA31FF0C23FE2DA80088C9BC /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31FF0B23FE2DA80088C9BC /* Section.swift */; };
+		DA31FF0E23FE30290088C9BC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31FF0D23FE30290088C9BC /* Item.swift */; };
 		DAABD7AC23FBF19700FC0CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABD7AB23FBF19700FC0CBB /* AppDelegate.swift */; };
 		DAABD7AE23FBF19700FC0CBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABD7AD23FBF19700FC0CBB /* SceneDelegate.swift */; };
 		DAABD7B023FBF19700FC0CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABD7AF23FBF19700FC0CBB /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		DA31FF0523FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCompositionalLayout+.swift"; sourceTree = "<group>"; };
 		DA31FF0723FD5F190088C9BC /* NSCollectionLayoutSection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+.swift"; sourceTree = "<group>"; };
+		DA31FF0B23FE2DA80088C9BC /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		DA31FF0D23FE30290088C9BC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DAABD7A823FBF19700FC0CBB /* UICollectionViewCompositionalLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAABD7AB23FBF19700FC0CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAABD7AD23FBF19700FC0CBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				DAABD7AB23FBF19700FC0CBB /* AppDelegate.swift */,
 				DAABD7AD23FBF19700FC0CBB /* SceneDelegate.swift */,
 				DAABD7AF23FBF19700FC0CBB /* ViewController.swift */,
+				DA31FF0B23FE2DA80088C9BC /* Section.swift */,
+				DA31FF0D23FE30290088C9BC /* Item.swift */,
 				DA31FF0523FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift */,
 				DA31FF0723FD5F190088C9BC /* NSCollectionLayoutSection+.swift */,
 				DAABD7C023FBF91300FC0CBB /* CustomCell.swift */,
@@ -154,6 +160,8 @@
 				DAABD7B023FBF19700FC0CBB /* ViewController.swift in Sources */,
 				DA31FF0623FD5AE80088C9BC /* UICollectionViewCompositionalLayout+.swift in Sources */,
 				DA31FF0823FD5F190088C9BC /* NSCollectionLayoutSection+.swift in Sources */,
+				DA31FF0C23FE2DA80088C9BC /* Section.swift in Sources */,
+				DA31FF0E23FE30290088C9BC /* Item.swift in Sources */,
 				DAABD7AC23FBF19700FC0CBB /* AppDelegate.swift in Sources */,
 				DAABD7C223FBF91300FC0CBB /* CustomCell.swift in Sources */,
 				DAABD7AE23FBF19700FC0CBB /* SceneDelegate.swift in Sources */,
